@@ -8,8 +8,6 @@
 
 body {
   font-size: 16px;
-  margin: auto;
-  width: 920px;
 }
 
 ul {
@@ -22,25 +20,76 @@ ul {
   font-weight: bold;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#topnav {
+  border-bottom: 1px solid #484848;
+  background-color: white;
+  height: 80px;
 }
 
-#navbar-nav {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-#navbar-nav a {
+#topnav ul .nav-link {
   color: #484848;
   transition: 0.2s all;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-#navbar-nav a:hover {
+#topnav ul .nav-link:hover {
   color: #fba92c;
+}
+
+#home {
+  background-color: #fba92c;
+  height: 100vh;
+}
+
+#home h1 {
+  color: white;
+}
+
+#about {
+  background-color: white;
+  padding: 50px;
+}
+
+#projects {
+  border-top: 1px solid rgba(0, 0, 0, 0.136);
+  padding: 50px;
+}
+
+#projects .group {
+  display: flex;
+  justify-content: space-around;
+  align-items: "";
+  flex-flow: "" "";
+}
+
+#projects .group .item {
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+#skills {
+  border-top: 1px solid rgba(0, 0, 0, 0.136);
+  padding: 50px;
+}
+
+#skills .group {
+  display: flex;
+  justify-content: space-around;
+  align-items: "";
+  flex-flow: "" "";
+}
+
+#skills .group .item {
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+#contact {
+  border-top: 1px solid rgba(0, 0, 0, 0.136);
+  padding: 50px;
 }
 
 /*# sourceMappingURL=index.css.map */
