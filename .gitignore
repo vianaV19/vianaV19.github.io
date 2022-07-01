@@ -1,5 +1,6 @@
 #ignoring sass
 sass
 
-
 .vscode
+
+node_modules

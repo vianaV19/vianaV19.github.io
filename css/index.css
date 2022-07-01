@@ -1,95 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto";
-  text-decoration: none;
-}
+/* Error: Undefined mixin.
+ *     ,
+ * 108 |         @include flex(space-around);
+ *     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   sass\index.scss 108:9  root stylesheet */
 
-body {
-  font-size: 16px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 108 \2502          @include flex(space-around);\d\a     \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   sass\\index.scss 108:9  root stylesheet";
 }
-
-ul {
-  list-style-type: none;
-}
-
-#page-title {
-  font-size: 1.1rem;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-
-#topnav {
-  border-bottom: 1px solid #484848;
-  background-color: white;
-  height: 80px;
-}
-
-#topnav ul .nav-link {
-  color: #484848;
-  transition: 0.2s all;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-#topnav ul .nav-link:hover {
-  color: #fba92c;
-}
-
-#home {
-  background-color: #fba92c;
-  height: 100vh;
-}
-
-#home h1 {
-  color: white;
-}
-
-#about {
-  background-color: white;
-  padding: 50px;
-}
-
-#projects {
-  border-top: 1px solid rgba(0, 0, 0, 0.136);
-  padding: 50px;
-}
-
-#projects .group {
-  display: flex;
-  justify-content: space-around;
-  align-items: "";
-  flex-flow: "" "";
-}
-
-#projects .group .item {
-  height: 300px;
-  width: 200px;
-  border: 1px solid black;
-}
-
-#skills {
-  border-top: 1px solid rgba(0, 0, 0, 0.136);
-  padding: 50px;
-}
-
-#skills .group {
-  display: flex;
-  justify-content: space-around;
-  align-items: "";
-  flex-flow: "" "";
-}
-
-#skills .group .item {
-  height: 300px;
-  width: 200px;
-  border: 1px solid black;
-}
-
-#contact {
-  border-top: 1px solid rgba(0, 0, 0, 0.136);
-  padding: 50px;
-}
-
-/*# sourceMappingURL=index.css.map */

@@ -22,10 +22,10 @@
     <link rel="stylesheet" href="css/normalize.css">
 
     <!-- INDEX STYLE -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- SCRIPT INDEX -->
-    <script defer src="index.js"></script>
+    <script defer src="assets/js/index.js"></script>
 
 </head>
 
@@ -34,23 +34,30 @@
 
     <!-- HEADER START -->
     <header>
-        <nav id="topnav" class="navbar navbar-expand-md fixed-top">
+        <nav id="topnav" class="navbar navbar-expand-sm fixed-top">
             <div class="container">
-
                 <div id="page-title" class="navbar-brand">
                     <h1>
                         Matheus Viana
                     </h1>
                 </div>
 
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mim</a> </li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a> </li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#top-nav" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
 
+
+                <div class="collapse navbar-collapse" id="top-nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre mim</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -60,8 +67,8 @@
     <section id="home" class="d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <h1 class="display-1 mb-2">Full Stack Developer</h1>
-                <h2 class="mb-4">Freelancer & Front-end & Back-end</h2>
+                <h1 class="display-1 mb-2">Front End Developer</h1>
+                <h2 class="mb-4">Freelancer Front-end & Back-end</h2>
                 <div>
                     <a class="btn btn-light btn-lg" href="#about">Saiba Mais</a>
                 </div>
@@ -72,12 +79,12 @@
 
 
     <!-- ABOUT START -->
-    <section id="about">
-        <div class="container h-100">
+    <section id="about" class="d-flex align-items-center">
+        <div class="container-fluid">
             <di class="row d-flex">
                 <div class="col-md-6 align-self-center">
                     <div>
-                        <img class="img-fluid rounded-5" width="400px" src="assets/imgs/perfil.png" alt="perfil.png">
+                        <img class="rounded-5" width="70%" src="assets/imgs/perfil.png" alt="perfil.png">
                     </div>
                 </div>
 
@@ -95,7 +102,7 @@
     <!-- ABOUT FINAL -->
 
     <!-- PROJECTS START -->
-    <section id="projects">
+    <section id="projects" class="d-flex align-items-center">
         <div class="container">
             <h2 class="text-center">Projects</h2>
             <div class="group">
@@ -125,7 +132,7 @@
     <!-- PROJECTS FINAL -->
 
     <!-- SKILLS START -->
-    <section id="skills">
+    <section id="skills" class="d-flex align-items-center">
         <div class="container">
             <h2 class="text-center">Skills</h2>
             <div class="group">
@@ -160,9 +167,9 @@
             <h2 class="text-center">Contact</h2>
             <div class="d-flex justify-content-center gap-2">
 
-                <a href="">Linkedin</a>
-                <a href="">Github</a>
-                <a href="">Twitter</a>
+                <a href="https://www.linkedin.com/in/matheus-viana-844355205/">Linkedin</a>
+                <a href="https://github.com/vianaV19">Github</a>
+                <a href="https://twitter.com/viannaV19">Twitter</a>
 
             </div>
         </div>
