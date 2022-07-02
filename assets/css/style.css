@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav.topnav-anim {
+  background-color: white;
+  height: 100px;
+  transition: all 0.5s;
+  border-bottom: 1px solid #484848;
+}
+nav.topnav-anim .navbar-brand,
+nav.topnav-anim .navbar-toggler i,
+nav.topnav-anim .navbar-toggler,
+nav.topnav-anim .navbar-nav .nav-link {
+  color: #484848;
+}
+
+.topnav {
+  background-color: transparent;
+  height: 80px;
+  transition: all 0.5s;
+}
+.topnav .navbar-toggler,
+.topnav .navbar-toggler i {
+  color: white;
+}
+.topnav .navbar-brand {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: white;
+}
+.topnav .navbar-nav .nav-link {
+  color: white;
+  transition: 0.2s color;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.topnav .navbar-nav {
+  padding: 10px 10px;
+  transition: all 0.5s;
+}
+.topnav .navbar-nav .nav-link:hover {
+  color: #fba92c;
+}
+
+#home {
+  height: 100vh;
+  color: white;
+}
+
+#home:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background: url("../imgs/background.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+#about {
+  background-color: white;
+  padding: 50px;
+  height: 100vh;
+}
+
+#projects {
+  border-top: 1px solid rgba(0, 0, 0, 0.136);
+  padding: 50px;
+}
+#projects .group {
+  display: flex;
+  justify-content: space-around;
+  align-items: none;
+  flex-flow: row wrap;
+}
+#projects .group .item {
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+#skills {
+  border-top: 1px solid rgba(0, 0, 0, 0.136);
+  padding: 50px;
+}
+#skills .group {
+  display: flex;
+  justify-content: space-around;
+  align-items: none;
+  flex-flow: row wrap;
+}
+#skills .group .item {
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+#contact {
+  border-top: 1px solid rgba(0, 0, 0, 0.136);
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
+  .topnav-anim .navbar-nav {
+    background: white;
+    transition: left 0.2s, color 0.2s;
+    margin-top: -10px;
+  }
+
+  .navbar-nav {
+    background: linear-gradient(to bottom, transparent, #484848 5%);
+  }
+  .navbar-nav .nav-link {
+    position: relative;
+    left: 0;
+  }
+  .navbar-nav .nav-link:hover {
+    transition: left 0.2s, color 0.2s;
+    left: 10px;
+  }
+
+  .topnav .navbar-brand {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

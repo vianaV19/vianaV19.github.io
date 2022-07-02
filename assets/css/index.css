@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
-@import 'node_modules/font-awesome/css/font-awesome.min.css';
 * {
   padding: 0;
   margin: 0;
@@ -15,32 +13,45 @@ ul {
   list-style-type: none;
 }
 
-#topnav {
+nav.topnav-anim {
+  background-color: white;
+  height: 100px;
+  transition: all 0.5s;
+  border-bottom: 1px solid #484848;
+}
+nav.topnav-anim .navbar-brand,
+nav.topnav-anim .navbar-toggler i,
+nav.topnav-anim .navbar-toggler,
+nav.topnav-anim .navbar-nav .nav-link {
+  color: #484848;
+}
+
+.topnav {
   background-color: transparent;
   height: 80px;
+  transition: all 0.5s;
 }
-#topnav .navbar-toggler {
+.topnav .navbar-toggler,
+.topnav .navbar-toggler i {
   color: white;
 }
-#topnav .navbar-toggler i {
-  color: white;
-}
-#topnav #page-title {
+.topnav .navbar-brand {
   font-size: 1.1rem;
   letter-spacing: 2px;
   font-weight: bold;
   color: white;
 }
-#topnav ul .nav-link {
-  color: rgb(216, 216, 216);
-  transition: 0.2s all;
+.topnav .navbar-nav .nav-link {
+  color: white;
+  transition: 0.2s color;
   font-weight: bold;
   letter-spacing: 1px;
 }
-#topnav ul {
-  background-color: transparent;
+.topnav .navbar-nav {
+  padding: 10px 10px;
+  transition: all 0.5s;
 }
-#topnav ul .nav-link:hover {
+.topnav .navbar-nav .nav-link:hover {
   color: #fba92c;
 }
 
@@ -56,7 +67,7 @@ ul {
   right: 0;
   z-index: -1;
   display: block;
-  background: url("../assets/imgs/background.jpg") no-repeat;
+  background: url("../imgs/background.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
   -webkit-filter: blur(2px);
@@ -75,14 +86,12 @@ ul {
 #projects {
   border-top: 1px solid rgba(0, 0, 0, 0.136);
   padding: 50px;
-  height: 100vh;
 }
 #projects .group {
   display: flex;
   justify-content: space-around;
-  align-items: "";
-  flex-flow: "" "";
-  flex-wrap: wrap;
+  align-items: none;
+  flex-flow: row wrap;
 }
 #projects .group .item {
   height: 300px;
@@ -93,13 +102,12 @@ ul {
 #skills {
   border-top: 1px solid rgba(0, 0, 0, 0.136);
   padding: 50px;
-  height: 100vh;
 }
 #skills .group {
   display: flex;
   justify-content: space-around;
-  align-items: "";
-  flex-flow: "" "";
+  align-items: none;
+  flex-flow: row wrap;
 }
 #skills .group .item {
   height: 300px;
@@ -112,4 +120,28 @@ ul {
   padding: 50px;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 768px) {
+  .topnav-anim .navbar-nav {
+    background: white;
+    transition: left 0.2s, color 0.2s;
+    margin-top: -10px;
+  }
+
+  .navbar-nav {
+    background: linear-gradient(to bottom, transparent, #484848 5%);
+  }
+  .navbar-nav .nav-link {
+    position: relative;
+    left: 0;
+  }
+  .navbar-nav .nav-link:hover {
+    transition: left 0.2s, color 0.2s;
+    left: 10px;
+  }
+
+  .topnav .navbar-brand {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
