@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #484848;
+}
+
+.filter-white {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -49,6 +61,7 @@ nav.topnav-anim .navbar-nav .nav-link {
   letter-spacing: 1px;
 }
 .topnav .navbar-nav {
+  font-size: 1.1rem;
   padding: 10px 10px;
   transition: all 0.5s;
 }
@@ -58,7 +71,40 @@ nav.topnav-anim .navbar-nav .nav-link {
 
 #home {
   height: 100vh;
+}
+#home h1 {
   color: white;
+  font-weight: bolder;
+  text-shadow: #484848;
+}
+#home h1::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 5px;
+  background-color: orange;
+  animation-name: title-anim;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 5s;
+}
+#home h2 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+#home .btn {
+  transition: all 0.3s;
+  background-color: black;
+  box-shadow: 0 0 0.5rem black;
+  font-weight: 500;
+  color: white;
+}
+#home .btn:hover {
+  background-color: #fba92c;
+  border: 1px solid #fba92c;
+  box-shadow: 0 0 0.8rem #fba92c;
+  transform: scale(1.1, 1.1);
 }
 
 #home:before {
@@ -93,11 +139,24 @@ nav.topnav-anim .navbar-nav .nav-link {
   justify-content: space-around;
   align-items: none;
   flex-flow: row wrap;
+  gap: 10px;
 }
-#projects .group .item {
-  height: 300px;
-  width: 200px;
-  border: 1px solid black;
+#projects .group div.item {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+#projects .group div.item img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#projects .group div.item .content {
+  padding: 20px;
+}
+#projects .group div.item:hover {
+  box-shadow: 0 0 1.5rem 0.2rem #fba92c;
+  transform: scale(1.05, 1.05);
 }
 
 #skills {
@@ -109,11 +168,15 @@ nav.topnav-anim .navbar-nav .nav-link {
   justify-content: space-around;
   align-items: none;
   flex-flow: row wrap;
+  gap: 10px;
 }
 #skills .group .item {
   height: 300px;
-  width: 200px;
+  width: 300px;
   border: 1px solid black;
+}
+#skills .group .item .content {
+  padding: 20px;
 }
 
 #contact {
@@ -121,6 +184,16 @@ nav.topnav-anim .navbar-nav .nav-link {
   padding: 50px;
 }
 
+@keyframes title-anim {
+  from {
+    left: 0;
+    width: 5%;
+  }
+  to {
+    left: 40%;
+    width: 25%;
+  }
+}
 @media (max-width: 768px) {
   .topnav-anim .navbar-nav {
     background: white;

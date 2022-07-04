@@ -33,6 +33,29 @@
 
 <body>
     <!-- PRECISO DECIDIR O IDIOMA -->
+    <!-- COLOCAR MODO ESCURO -->
+
+    <!-- SCROLL TOP BUTTON STYLE -->
+    <style>
+        #scrollTopBtn {
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 60px;
+            display: none;
+            position: fixed;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #scrollTopBtn.show {
+            display: flex;
+        }
+    </style>
+
+    <a id="scrollTopBtn" class="btn btn-lg btn-primary" href="#home">
+        <img class="filter-white" src="assets/imgs/arrow-up-solid.svg" alt="">
+    </a>
 
     <!-- HEADER START -->
     <header>
@@ -67,9 +90,9 @@
         <div class="container">
             <div class="row">
                 <h1 class="display-1 mb-2">Front End Developer</h1>
-                <h2 class="mb-4">Freelancer Front-end & Back-end</h2>
+                <h2 class="mb-3 mt-3">Freelancer Front-end & Back-end</h2>
                 <div>
-                    <a class="btn btn-light btn-lg" href="#about">Saiba Mais</a>
+                    <a class="btn btn-lg" href="#about">Sobre Mim</a>
                 </div>
             </div>
         </div>
@@ -82,9 +105,9 @@
         <div class="container-fluid">
             <di class="row d-flex">
                 <div class="col-md-6 align-self-center">
-                    <div>
-                        <img class="rounded-5" width="70%" src="assets/imgs/perfil.png" alt="perfil.png">
-                    </div>
+
+                    <img class="d-block ms-auto rounded-5" width="100%" src="assets/imgs/perfil.png" alt="perfil.png">
+
                 </div>
 
                 <div class="col-md-6 align-self-start">
@@ -103,12 +126,21 @@
     <!-- PROJECTS START -->
     <section id="projects" class="d-flex align-items-center">
         <div class="container">
-            <h2 class="text-center">Projects</h2>
+            <h2 class="text-center">Projetos</h2>
             <div class="group">
                 <div class="item">
-                    <!-- Na verdade o projeto sera composto por uma imagem -->
-                    <h3>Project</h3>
-                    <p>Description</p>
+                    <img width="100%" height="200" src="assets/imgs/perfil.png" alt="">
+                    <div class="content">
+
+                        <h5>App Mata Mosquito</h5>
+                        <p>Curso desenvolvimento web completo 2022 - Udemy</p>
+                        <p> <strong>Languages:</strong> JS, HTML, CSS e Bootstrap</p>
+                        <a href="">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
                 </div>
                 <div class="item">
                     <!-- Na verdade o projeto sera composto por uma imagem -->

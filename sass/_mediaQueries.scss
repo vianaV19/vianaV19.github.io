@@ -1,0 +1,34 @@
+//MEDIA QUERIES
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    $trans: left 0.2s,
+    color 0.2s;
+
+    .topnav-anim {
+        .navbar-nav {
+            background: white;
+            transition: $trans;
+            margin-top: -10px;
+        }
+    }
+
+    .navbar-nav {
+        background: linear-gradient(to bottom, transparent, #484848 5%);
+
+        .nav-link {
+            position: relative;
+            left: 0;
+        }
+
+        .nav-link:hover {
+            transition: $trans;
+            left: 10px;
+        }
+    }
+
+    .topnav .navbar-brand {
+        margin: 0 auto;
+    }
+
+}
