@@ -185,7 +185,7 @@ nav.topnav-anim {
  
     .group {
         @include flex(space-around, none, row, wrap);
-        gap: 10px;
+        gap: $gap;
 
         div.item {
             width: 300px;
@@ -199,7 +199,20 @@ nav.topnav-anim {
 
             .content {
                 padding: 20px;
+
+                a{
+                    color: black;
+                    font-size: 2rem;
+                    border-radius: 20px;
+                
+                    :hover{
+                        box-shadow:  0 0 0.5rem rgba(0, 0, 0, 0.5);
+                    }
+                }
             }
+
+         
+
         }
         div.item:hover{
             box-shadow: 0 0 1.5rem 0.2rem #fba92c;
@@ -217,7 +230,7 @@ nav.topnav-anim {
 
     .group {
         @include flex(space-around, none, row, wrap);
-        gap: 10px;
+        gap: $gap;
 
         .item {
             height: 300px;

@@ -139,7 +139,7 @@ nav.topnav-anim .navbar-nav .nav-link {
   justify-content: space-around;
   align-items: none;
   flex-flow: row wrap;
-  gap: 10px;
+  gap: 50px;
 }
 #projects .group div.item {
   width: 300px;
@@ -153,6 +153,14 @@ nav.topnav-anim .navbar-nav .nav-link {
 }
 #projects .group div.item .content {
   padding: 20px;
+}
+#projects .group div.item .content a {
+  color: black;
+  font-size: 2rem;
+  border-radius: 20px;
+}
+#projects .group div.item .content a :hover {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 #projects .group div.item:hover {
   box-shadow: 0 0 1.5rem 0.2rem #fba92c;
@@ -168,7 +176,7 @@ nav.topnav-anim .navbar-nav .nav-link {
   justify-content: space-around;
   align-items: none;
   flex-flow: row wrap;
-  gap: 10px;
+  gap: 50px;
 }
 #skills .group .item {
   height: 300px;
