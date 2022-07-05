@@ -50,6 +50,17 @@ ul {
     list-style-type: none;
 }
 
+//Page Button Style
+#btn {
+    background-color: #fba92c;
+    border: 1px solid #fba92c;
+}
+
+#btn:hover {
+    background-color: #484848;
+    border: 1px solid #484848;
+}
+
 // HEADER SECTION
 
 //topnav animation class
@@ -192,15 +203,7 @@ nav.topnav-anim {
         font-size: 1.5vw;
     }
 
-    #curriculoBtn {
-        background-color: #fba92c;
-        border: 1px solid #fba92c;
-    }
 
-    #curriculoBtn:hover {
-        background-color: #484848;
-        border: 1px solid #484848;
-    }
 }
 
 // PROJECTS
@@ -211,6 +214,7 @@ nav.topnav-anim {
     .group {
         @include flex(space-around, none, row, wrap);
         gap: $gap;
+   
 
         div.item {
             width: 300px;

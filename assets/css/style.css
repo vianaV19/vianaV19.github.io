@@ -30,6 +30,16 @@ ul {
   list-style-type: none;
 }
 
+#btn {
+  background-color: #fba92c;
+  border: 1px solid #fba92c;
+}
+
+#btn:hover {
+  background-color: #484848;
+  border: 1px solid #484848;
+}
+
 nav.topnav-anim {
   background-color: white;
   height: 100px;
@@ -139,14 +149,6 @@ nav.topnav-anim .navbar-nav .nav-link {
 }
 #about p {
   font-size: 1.5vw;
-}
-#about #curriculoBtn {
-  background-color: #fba92c;
-  border: 1px solid #fba92c;
-}
-#about #curriculoBtn:hover {
-  background-color: #484848;
-  border: 1px solid #484848;
 }
 
 #projects {
