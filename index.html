@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-
+    <!-- FONT AWESOME -->
     <script src="https://use.fontawesome.com/6dad910185.js"></script>
 
     <!-- NORMALIZE STYLE  -->
@@ -57,21 +57,24 @@
 
     <!-- HEADER START -->
     <header>
-        <nav id="topnav" class="topnav navbar navbar-expand-md fixed-top">
+        <nav id="topnav" class="topnav navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <div class="navbar-brand ms-md-5">
-                    <h1>
-                        Matheus Viana
+                <div class="navbar-brand ms-lg-5">
+                    <h1 class="my-2">
+                       <span style="color: #fba92c;">{ </span> Matheus Viana <span style="color: #fba92c;"> }</span>
                     </h1>
                 </div>
-
+                 
+                <!-- TOGGLER BUTTON -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#top-nav"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
             </div>
+
+            <!-- NAVIGATION START -->
             <div class="collapse navbar-collapse" id="top-nav">
-                <ul class="navbar-nav ms-auto  me-md-5">
+                <ul class="navbar-nav ms-auto  me-lg-5">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Sobre</a> </li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a> </li>
@@ -79,6 +82,7 @@
                     <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                 </ul>
             </div>
+            <!-- NAVIGATION FINAL -->
         </nav>
     </header>
     <!-- HEADER FINAL -->
@@ -88,7 +92,7 @@
         <div class="container">
             <div class="row">
                 <h1 class="display-1 mb-2">Front End Developer</h1>
-                <h2 class="mb-3 mt-3">Freelancer Front-end & Back-end</h2>
+                <h3 id="subtitle" class="mb-4 mt-3">Bem-vindo(a) ao meu portfólio</h3>
                 <div>
                     <a class="btn btn-lg" href="#about">Sobre Mim</a>
                 </div>
@@ -110,13 +114,15 @@
 
                 <div class="col-md-6 align-self-start" style="min-width: 300px">
                     <h3>Sobre Mim</h3>
-                    <p>Olá, me chamo matheus viana, sou desenvolvedor de software e hoje atuo na área de desenvolvimento
-                        front-end como freelancer. Me descobri na área aos 14 anos e desde então me mantive estudando
-                        cada vez mais.</p>
-                    <p>Já estagiei em inicição científica no Colégio Pedro II, atuei como freelancer resolvendo
-                        trabalhos de faculdade e desenvolvendo sites. Além disso ja participei de uma hackathon feita
-                        pela empresa Recode-pro com o objetivo de desenvolver um app de impacto social. Hoje procuro
-                        adquirir experiência como dev front-end junior e evoluir no ramo web.</p>
+                    <p>Olá, me chamo matheus viana, Me descobri na área aos 14 anos e me apaixonei pelo o que a
+                        tecnologia pode proporcionar ao mundo.</p>
+
+                    <p>No front-end gosto de criar designs fluidos e responsivos, sempre priorizando a interface e experiência do usuário.</p>
+
+
+                    <p><small style="font-style: italic;">"A 3 caminhos para o fracasso: Não ensinar o que se sabe, não
+                            praticar o que se ensina e não perguntar o que se ignora"</small></p>
+
 
                     <a id="btn" class="btn btn-lg btn-primary"
                         href="https://drive.google.com/file/d/1x18AHgtP1UNA0qGOeqX59ekDyT94DbhG/view?usp=sharing"
@@ -129,7 +135,8 @@
     <!-- PROJECTS START -->
     <section id="projects" class="d-flex align-items-center">
         <div class="container">
-            <h2 class="text-center mb-5">Projetos</h2>
+            <h2 class="text-center">Projetos</h2>
+            <p class="text-center lead mb-5">Confira alguns do meus principais projetos!</p>
             <div class="group">
                 <div class="item">
                     <img width="100%" height="200" src="assets/imgs/projects/app-mata-mosquito.png" alt="">
@@ -180,7 +187,7 @@
                         <h5>Mywallet - <small>Projeto próprio</small></h5>
                         <p>Site que simula uma carteira digital abordando conceitos como CRUD e MVC.</p>
 
-                        <a href="https://github.com/vianaV19/MyWallet"  target="_blank">
+                        <a href="https://github.com/vianaV19/MyWallet" target="_blank">
                             <i class="fa fa-github" aria-hidden="true"></i>
                         </a>
 

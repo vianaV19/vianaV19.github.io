@@ -102,8 +102,9 @@ nav.topnav-anim {
     .navbar-nav .nav-link {
         color: $tpnc;
         transition: 0.2s color;
-        font-weight: bold;
-        letter-spacing: 1px;
+        font-weight: 1000;
+        letter-spacing: 0.5px;
+        font-size: 16px;
     }
 
     .navbar-nav {
@@ -142,10 +143,11 @@ nav.topnav-anim {
         animation-duration: 5s;
     }
 
-    h2 {
+    #subtitle {
         color: white;
         font-weight: bold;
         letter-spacing: 1.1px;
+        width: 50vw;
     }
 
     .btn {
@@ -201,6 +203,7 @@ nav.topnav-anim {
 
     p {
         font-size: 1.5vw;
+        text-align: justify;
     }
 
 
@@ -210,6 +213,10 @@ nav.topnav-anim {
 #projects {
     border-top: 1px solid rgba(0, 0, 0, 0.136);
     padding: $pd;
+
+    h2 {
+        color: #fba92c;
+    }
 
     .group {
         @include flex(space-around, none, row, wrap);

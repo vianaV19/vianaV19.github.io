@@ -1,14 +1,14 @@
-//MEDIA QUERIES
 
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
     $trans: all 0.2s;
 
+    //TOPNAV START
     .topnav-anim {
         .navbar-nav {
             background: white;
             transition: $trans;
-            margin-top: -30px;
+            margin-top: -8px;
             padding-top: 20px;
         }
     }
@@ -31,6 +31,7 @@
         margin: 0 auto;
     }
 
+    //ABOUT START
     #about {
 
 

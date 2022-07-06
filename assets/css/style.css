@@ -70,8 +70,9 @@ nav.topnav-anim .navbar-nav .nav-link {
 .topnav .navbar-nav .nav-link {
   color: white;
   transition: 0.2s color;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-weight: 1000;
+  letter-spacing: 0.5px;
+  font-size: 16px;
 }
 .topnav .navbar-nav {
   font-size: 1.1rem;
@@ -101,10 +102,11 @@ nav.topnav-anim .navbar-nav .nav-link {
   animation-direction: alternate;
   animation-duration: 5s;
 }
-#home h2 {
+#home #subtitle {
   color: white;
   font-weight: bold;
   letter-spacing: 1.1px;
+  width: 50vw;
 }
 #home .btn {
   transition: all 0.3s;
@@ -149,11 +151,15 @@ nav.topnav-anim .navbar-nav .nav-link {
 }
 #about p {
   font-size: 1.5vw;
+  text-align: justify;
 }
 
 #projects {
   border-top: 1px solid rgba(0, 0, 0, 0.136);
   padding: 50px;
+}
+#projects h2 {
+  color: #fba92c;
 }
 #projects .group {
   display: flex;
@@ -256,11 +262,11 @@ footer a:hover {
     width: 25%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .topnav-anim .navbar-nav {
     background: white;
     transition: all 0.2s;
-    margin-top: -30px;
+    margin-top: -8px;
     padding-top: 20px;
   }
 
