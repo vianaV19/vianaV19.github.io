@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 ::-webkit-scrollbar {
   width: 10px;
@@ -19,8 +12,7 @@
 }
 
 .filter-white {
-  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 * {
@@ -51,8 +43,6 @@ ul {
 nav.topnav-anim {
   background-color: white;
   height: 100px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
   border-bottom: 1px solid #484848;
 }
@@ -66,8 +56,6 @@ nav.topnav-anim .navbar-nav .nav-link {
 .topnav {
   background-color: transparent;
   height: 80px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .topnav .navbar-toggler,
@@ -81,8 +69,6 @@ nav.topnav-anim .navbar-nav .nav-link {
 }
 .topnav .navbar-nav .nav-link {
   color: white;
-  -webkit-transition: 0.2s color;
-  -o-transition: 0.2s color;
   transition: 0.2s color;
   font-weight: 1000;
   letter-spacing: 0.5px;
@@ -91,8 +77,6 @@ nav.topnav-anim .navbar-nav .nav-link {
 .topnav .navbar-nav {
   font-size: 1.1rem;
   padding: 10px 10px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .topnav .navbar-nav .nav-link:hover {
@@ -113,14 +97,10 @@ nav.topnav-anim .navbar-nav .nav-link {
   display: block;
   height: 5px;
   background-color: orange;
-  -webkit-animation-name: title-anim;
-          animation-name: title-anim;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-name: title-anim;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 5s;
 }
 #home #subtitle {
   color: white;
@@ -129,23 +109,17 @@ nav.topnav-anim .navbar-nav .nav-link {
   width: 50vw;
 }
 #home .btn {
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background-color: black;
-  -webkit-box-shadow: 0 0 0.5rem black;
-          box-shadow: 0 0 0.5rem black;
+  box-shadow: 0 0 0.5rem black;
   font-weight: 500;
   color: white;
 }
 #home .btn:hover {
   background-color: #fba92c;
   border: 1px solid #fba92c;
-  -webkit-box-shadow: 0 0 0.8rem #fba92c;
-          box-shadow: 0 0 0.8rem #fba92c;
-  -webkit-transform: scale(1.1, 1.1);
-      -ms-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  box-shadow: 0 0 0.8rem #fba92c;
+  transform: scale(1.1, 1.1);
 }
 
 #home:before {
@@ -188,28 +162,17 @@ nav.topnav-anim .navbar-nav .nav-link {
   color: #fba92c;
 }
 #projects .group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: none;
+  flex-flow: row wrap;
   gap: 30px;
 }
 #projects .group div.item {
   width: 300px;
   height: 400px;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
   transition: all 0.5s;
 }
 #projects .group div.item img {
@@ -222,19 +185,14 @@ nav.topnav-anim .navbar-nav .nav-link {
 #projects .group div.item .content a {
   color: black;
   font-size: 2rem;
-  -webkit-transition: color 0.2s;
-  -o-transition: color 0.2s;
   transition: color 0.2s;
 }
 #projects .group div.item .content a:hover {
   color: #9e9e9e;
 }
 #projects .group div.item:hover {
-  -webkit-box-shadow: 0 0 1.5rem 0.2rem #fba92c;
-          box-shadow: 0 0 1.5rem 0.2rem #fba92c;
-  -webkit-transform: scale(1.05, 1.05);
-      -ms-transform: scale(1.05, 1.05);
-          transform: scale(1.05, 1.05);
+  box-shadow: 0 0 1.5rem 0.2rem #fba92c;
+  transform: scale(1.05, 1.05);
 }
 
 #skills {
@@ -246,32 +204,16 @@ nav.topnav-anim .navbar-nav .nav-link {
   font-weight: bold;
 }
 #skills .group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  justify-content: center;
+  align-items: none;
+  flex-flow: row wrap;
   row-gap: 20px;
 }
 #skills .group .item {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  -o-transition: transform 0.2s;
+  flex-basis: 20%;
+  flex-grow: 1;
   transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 #skills .group .item img {
   display: block;
@@ -279,9 +221,7 @@ nav.topnav-anim .navbar-nav .nav-link {
   width: 100px;
 }
 #skills .group .item:hover {
-  -webkit-transform: scale(1.05, 1.05);
-      -ms-transform: scale(1.05, 1.05);
-          transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
 }
 
 #contact {
@@ -291,8 +231,7 @@ nav.topnav-anim .navbar-nav .nav-link {
 
 footer {
   background-color: #484848;
-  -webkit-box-shadow: inset 0 0 0.2rem black;
-          box-shadow: inset 0 0 0.2rem black;
+  box-shadow: inset 0 0 0.2rem black;
   padding: 20px 0;
 }
 footer p {
@@ -306,26 +245,11 @@ footer a {
   font-size: 50px;
   display: inline-block;
   color: black;
-  -webkit-transition: color 0.2s;
-  -o-transition: color 0.2s;
   transition: color 0.2s;
 }
 footer a:hover {
   color: #fba92c;
-  -webkit-transform: scale(1.1, 1.1);
-      -ms-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-}
-
-@-webkit-keyframes title-anim {
-  from {
-    left: 0;
-    width: 5%;
-  }
-  to {
-    left: 40%;
-    width: 25%;
-  }
+  transform: scale(1.1, 1.1);
 }
 
 @keyframes title-anim {
@@ -341,16 +265,12 @@ footer a:hover {
 @media (max-width: 992px) {
   .topnav-anim .navbar-nav {
     background: white;
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
     transition: all 0.2s;
     margin-top: -8px;
     padding-top: 20px;
   }
 
   .navbar-nav {
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(5%, #484848));
-    background: -o-linear-gradient(top, transparent, #484848 5%);
     background: linear-gradient(to bottom, transparent, #484848 5%);
   }
   .navbar-nav .nav-link {
@@ -358,14 +278,13 @@ footer a:hover {
     left: 0;
   }
   .navbar-nav .nav-link:hover {
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
     transition: all 0.2s;
     left: 10px;
   }
 
   .topnav .navbar-brand {
     margin: 0 auto;
+    font-size: 1em;
   }
 
   #about h3 {
@@ -375,3 +294,29 @@ footer a:hover {
     font-size: 1em;
   }
 }
+@media (max-width: 576px) {
+  nav.topnav {
+    height: 100px;
+  }
+  nav.topnav .navbar-nav {
+    margin-top: 10px;
+  }
+
+  nav.topnav-anim {
+    height: 120px;
+  }
+  nav.topnav-anim .navbar-nav {
+    margin-top: 10px;
+  }
+
+  nav.topnav .container {
+    flex-direction: column;
+  }
+
+  #projects .group div.item,
+#skills .group div.item {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
