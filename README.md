@@ -2,4 +2,4 @@
 
 ---
 
-<a   target="_blank" href="https://vianav19.github.io/">Acessar Projeto</a>
+<a href="https://vianav19.github.io/" target="_blank" >Acessar Projeto</a>
