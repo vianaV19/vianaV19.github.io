@@ -228,11 +228,19 @@ nav.topnav-anim .navbar-nav .nav-link {
   border-top: 1px solid rgba(0, 0, 0, 0.136);
   padding: 50px;
 }
+#contact h2 {
+  color: #fba92c;
+}
 #contact input, #contact textarea {
   border: 2px solid #fba92c;
   border-radius: 0;
   padding: 10px;
   font-weight: 500;
+  color: #565656;
+}
+#contact input:focus, #contact textarea:focus {
+  outline: none !important;
+  box-shadow: none;
 }
 
 footer {

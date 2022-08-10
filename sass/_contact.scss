@@ -3,12 +3,24 @@
 #contact {
     border-top: 1px solid rgba(0, 0, 0, 0.136);
     padding: $pd;
+
+    h2{
+        color: $hotOrange;
+    }
     
     input, textarea{
         border: 2px solid $hotOrange;
         border-radius: 0;
         padding: 10px;
         font-weight: 500;
+        color: $mediumGray;
     }
+
+    input:focus, textarea:focus {
+        outline: none !important;
+        box-shadow: none;
+    }
+
+
 
 }
