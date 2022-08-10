@@ -1,0 +1,66 @@
+
+//HOME
+#home {
+    height: 100vh;
+
+    h1 {
+        color: white;
+        font-weight: bolder;
+        text-shadow: #484848;
+    }
+
+    h1::after {
+        content: "";
+        position: relative;
+        display: block;
+        height: 5px;
+        background-color: orange;
+        animation-name: title-anim;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 5s;
+    }
+
+    #subtitle {
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1.1px;
+        width: 50vw;
+    }
+
+    .btn {
+        transition: all 0.3s;
+        background-color: black;
+        box-shadow: 0 0 0.5rem black;
+        font-weight: 500;
+        color: $tpnc;
+    }
+
+    .btn:hover {
+        background-color: #fba92c;
+        border: 1px solid #fba92c;
+        box-shadow: 0 0 0.8rem #fba92c;
+        transform: scale(1.1, 1.1);
+    }
+}
+
+
+#home:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background: $bckgndUrl no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    -webkit-filter: blur($blur);
+    -moz-filter: blur($blur);
+    -o-filter: blur($blur);
+    -ms-filter: blur($blur);
+    filter: blur($blur);
+}
+

@@ -1,0 +1,57 @@
+// HEADER SECTION
+
+//topnav animation class
+nav.topnav-anim {
+    background-color: white;
+    height: 100px;
+    transition: $trans;
+    border-bottom: 1px solid #484848;
+
+    .navbar-brand,
+    .navbar-toggler i,
+    .navbar-toggler,
+    .navbar-nav .nav-link {
+        color: #484848;
+    }
+
+
+}
+
+.topnav {
+
+    // border-bottom: 1px solid #484848;
+    background-color: $nav-bckgnd;
+    height: 80px;
+    transition: $trans;
+
+    .navbar-toggler,
+    .navbar-toggler i {
+        color: $tpnc;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        color: $tpnc;
+    }
+
+
+    .navbar-nav .nav-link {
+        color: $tpnc;
+        transition: 0.2s color;
+        font-weight: 1000;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+    }
+
+    .navbar-nav {
+        font-size: 1.1rem;
+        padding: 10px 10px;
+        transition: $trans;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #fba92c;
+    }
+
+}
