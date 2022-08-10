@@ -18,7 +18,6 @@ nav.topnav-anim {
 }
 
 .topnav {
-
     // border-bottom: 1px solid #484848;
     background-color: $nav-bckgnd;
     height: 80px;
@@ -27,6 +26,11 @@ nav.topnav-anim {
     .navbar-toggler,
     .navbar-toggler i {
         color: $tpnc;
+        font-size: 24px;
+    }
+
+    .navbar-toggler{
+        border: none;
     }
 
     .navbar-brand {
@@ -35,12 +39,11 @@ nav.topnav-anim {
         color: $tpnc;
     }
 
-
     .navbar-nav .nav-link {
         color: $tpnc;
         transition: 0.2s color;
         font-weight: 1000;
-        letter-spacing: 0.5px;
+        letter-spacing: 1px;
         font-size: 16px;
     }
 

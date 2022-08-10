@@ -61,6 +61,10 @@ nav.topnav-anim .navbar-nav .nav-link {
 .topnav .navbar-toggler,
 .topnav .navbar-toggler i {
   color: white;
+  font-size: 24px;
+}
+.topnav .navbar-toggler {
+  border: none;
 }
 .topnav .navbar-brand {
   font-size: 1.3rem;
@@ -71,7 +75,7 @@ nav.topnav-anim .navbar-nav .nav-link {
   color: white;
   transition: 0.2s color;
   font-weight: 1000;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   font-size: 16px;
 }
 .topnav .navbar-nav {
@@ -259,7 +263,7 @@ footer a {
   font-size: 50px;
   display: inline-block;
   color: black;
-  transition: color 0.2s;
+  transition: all 0.2s;
 }
 footer a:hover {
   color: #fba92c;
