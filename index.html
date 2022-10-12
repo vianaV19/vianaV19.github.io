@@ -36,6 +36,32 @@
 
 <body>
 
+    <!-- SIDE SOCIAL MEDIA BUTTONS -->
+    <div id="medias-aside" >
+        <div class="content">
+            <div id="media-container">
+
+                <a class="social-media" href="https://www.linkedin.com/in/matheus-viana-844355205/" target="_blank"><i
+                        class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+            <div>
+                <a class="social-media" href="https://github.com/vianaV19" target="_blank"><i class="fa fa-github"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div>
+                <a class="social-media" href="https://twitter.com/viannaV19" target="_blank"><i class="fa fa-twitter-square"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div>
+                <a class="social-media" href="https://www.instagram.com/vianasz_dev/" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+      
+
+    </div>
+
     <!-- SCROLL TOP BUTTON STYLE -->
     <style>
         #scrollTopBtn {
@@ -64,10 +90,10 @@
             <div class="container">
                 <div class="navbar-brand ms-lg-5">
                     <h1 class="my-2">
-                       <span style="color: #fba92c;">{ </span> Matheus Viana <span style="color: #fba92c;"> }</span>
+                        <span style="color: #fba92c;">{ </span> Matheus Viana <span style="color: #fba92c;"> }</span>
                     </h1>
                 </div>
-                 
+
                 <!-- TOGGLER BUTTON -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#top-nav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -120,7 +146,8 @@
                     <p>Olá, me chamo matheus viana, Me descobri na área aos 14 anos e me apaixonei pelo o que a
                         tecnologia pode proporcionar ao mundo.</p>
 
-                    <p>No front-end gosto de criar designs fluidos e responsivos, sempre priorizando a interface e experiência do usuário.</p>
+                    <p>No front-end gosto de criar designs fluidos e responsivos, sempre priorizando a interface e
+                        experiência do usuário.</p>
 
 
                     <p><small style="font-style: italic;">"A 3 caminhos para o fracasso: Não ensinar o que se sabe, não
@@ -143,10 +170,10 @@
             <div class="group">
                 <div class="item">
                     <img width="100%" height="200" src="assets/imgs/projects/app-mata-mosquito.png" alt="">
-                    <div class="content dspa">
+                    <div class="content">
 
-                        <h5>App Mata Mosquito - <small>Curso Udemy</small></h5>
-                        <p>Jogo feito em Javascript. Mate os mosquitos que irão aparecer na tela</p>
+                        <h5>App Mata Mosquito - <small>Udemy Course</small></h5>
+                        <p>Jogo feito em Javascript. Mate os mosquitos que irão aparecer na tela.</p>
 
                         <a href="https://github.com/vianaV19/AppMataMosquito" target="_blank">
                             <i class="fa fa-github" aria-hidden="true"></i>
@@ -173,7 +200,7 @@
                     <img width="100%" height="200" src="assets/imgs/projects/spotify-clone.png" alt="">
                     <div class="content">
 
-                        <h5>Spotify Clone - <small>Curso Udemy</small></h5>
+                        <h5>Spotify Clone - <small>Udemy Course</small></h5>
                         <p>Clone do site spotify utilizando bootstrap e flex-container.</p>
 
                         <a href="https://github.com/vianaV19/projeto-spotify" target="_blank">
@@ -218,8 +245,8 @@
                     <img width="100%" height="200" src="assets/imgs/projects/finans.png" alt="">
                     <div class="content">
 
-                        <h5>Finans</h5>
-                        <p>Curso desenvolvimento web completo 2022 - Udemy</p>
+                        <h5>Finans - Udemy Course</h5>
+                        <p>Plataforma de gestão financeira.</p>
 
                         <a href="https://github.com/vianaV19/Finans" target="_blank">
                             <i class="fa fa-github" aria-hidden="true"></i>
@@ -271,7 +298,7 @@
                     <p class="mt-2 fw-bold">Angular</p>
                 </div>
 
-              
+
             </div>
             <br>
             <h2 class="my-5">Outras habilidades que possuo!</h2>
@@ -320,21 +347,21 @@
 
             <div class="row">
                 <div class="col-10 offset-1">
-                    <form action="">
+                    <form action="javascript:sendEmail()">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome </label>
-                            <input type="email" class="form-control" id="nome" placeholder="Ex.: matheus Viana">
+                            <input required type="text" class="form-control" id="nome" placeholder="Ex.: matheus Viana">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email </label>
-                            <input type="email" class="form-control" id="email" placeholder="Ex.: seuemail@example.com">
+                            <input required type="email" class="form-control" id="email" placeholder="Ex.: seuemail@example.com">
                         </div>
                         <div class="mb-3">
                             <label for="subject" class="form-label">Conteúdo</label>
-                            <textarea class="form-control" id="body-email" rows="3"></textarea>
+                            <textarea required class="form-control" id="body-email" rows="3"></textarea>
                         </div>
 
-                        <a id="btn" class="btn btn-lg btn-danger" href="javascript:sendEmail()">Enviar</a>
+                        <button type="submit" id="btn" class="btn btn-lg btn-danger">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -352,11 +379,16 @@
             </div>
 
             <div class="row">
-                <div class="social-medias ">
-                    <a href="https://www.linkedin.com/in/matheus-viana-844355205/"><i class="fa fa-linkedin-square"
+                <div>
+                    <a class="social-media" href="https://www.linkedin.com/in/matheus-viana-844355205/"
+                        target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a class="social-media" href="https://github.com/vianaV19" target="_blank"><i class="fa fa-github"
                             aria-hidden="true"></i></a>
-                    <a href="https://github.com/vianaV19"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="https://twitter.com/viannaV19"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a class="social-media" href="https://twitter.com/viannaV19" target="_blank"><i
+                            class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a class="social-media" href="https://www.instagram.com/vianasz_dev/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
 

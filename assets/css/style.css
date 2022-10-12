@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url("http://fonts.cdnfonts.com/css/visby");
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -40,6 +41,58 @@ ul {
   border: 1px solid #484848;
 }
 
+.social-media {
+  margin: 0 10px;
+  font-size: 50px;
+  color: black;
+  transition: all 0.2s;
+}
+
+.social-media:hover {
+  color: #fba92c;
+}
+
+#medias-aside {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+#medias-aside .content {
+  background-color: #484848;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: 0 0 0.5rem black;
+}
+#medias-aside .content a {
+  display: block;
+}
+
+#medias-aside::after,
+#medias-aside::before {
+  content: "";
+  width: 40px;
+  height: 30px;
+  border: 5px solid #484848;
+  position: absolute;
+  right: 0;
+  border-left: 0;
+}
+
+#medias-aside::after {
+  border-bottom: 0;
+  bottom: -25px;
+  right: -10px;
+  border-top-right-radius: 25px;
+}
+
+#medias-aside::before {
+  border-top: 0;
+  top: -25px;
+  right: -10px;
+  border-bottom-right-radius: 25px;
+}
+
 nav.topnav-anim {
   background-color: white;
   height: 100px;
@@ -74,9 +127,10 @@ nav.topnav-anim .navbar-nav .nav-link {
 .topnav .navbar-nav .nav-link {
   color: white;
   transition: 0.2s color;
-  font-weight: 1000;
-  letter-spacing: 1px;
+  font-weight: bold;
+  letter-spacing: 2px;
   font-size: 16px;
+  font-family: Arial, visby, roboto;
 }
 .topnav .navbar-nav {
   font-size: 1.1rem;
@@ -259,15 +313,7 @@ footer p {
   margin: 0;
 }
 footer a {
-  margin: 0 10px;
-  font-size: 50px;
   display: inline-block;
-  color: black;
-  transition: all 0.2s;
-}
-footer a:hover {
-  color: #fba92c;
-  transform: scale(1.1, 1.1);
 }
 
 @keyframes title-anim {

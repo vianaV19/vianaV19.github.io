@@ -23,6 +23,7 @@ nav.topnav-anim {
     height: 80px;
     transition: $trans;
 
+
     .navbar-toggler,
     .navbar-toggler i {
         color: $tpnc;
@@ -42,9 +43,10 @@ nav.topnav-anim {
     .navbar-nav .nav-link {
         color: $tpnc;
         transition: 0.2s color;
-        font-weight: 1000;
-        letter-spacing: 1px;
+        font-weight: bold;
+        letter-spacing: 2px;
         font-size: 16px;
+        font-family: Arial, visby, roboto;
     }
 
     .navbar-nav {

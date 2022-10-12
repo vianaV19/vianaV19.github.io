@@ -7,7 +7,7 @@
     background: #484848;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background-color: transparent;
 }
 
@@ -44,3 +44,79 @@ ul {
     border: 1px solid #484848;
 }
 
+
+// ASIDE SOCIAL MEDIA CSS
+// .hide {
+//     display: none;
+// }
+
+// .media-container {
+//     overflow: auto;
+//     border-color: transparent;
+// }
+
+// .selector {
+//     position: absolute;
+//     font-size: 20px;
+//     color: #fba92c;
+//     display: block;
+//     top: 7%;
+//     margin-right: 20px;
+
+// }
+
+.social-media {
+    margin: 0 10px;
+    font-size: 50px;
+    color: black;
+    transition: all 0.2s;
+}
+
+.social-media:hover {
+    color: #fba92c;
+}
+
+#medias-aside {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+
+    .content {
+        background-color: #484848;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        box-shadow: 0 0 0.5rem black;
+
+        a {
+            display: block;
+        }
+    }
+
+}
+
+#medias-aside::after,
+#medias-aside::before {
+    content: "";
+    width: 40px;
+    height: 30px;
+    border: 5px solid #484848;
+    position: absolute;
+    right: 0;
+    border-left: 0;
+ 
+}
+
+#medias-aside::after {
+    border-bottom: 0;
+    bottom: -25px;
+    right: -10px;
+    border-top-right-radius: 25px;
+}
+#medias-aside::before {
+    border-top: 0;
+    top: -25px;
+    right: -10px;
+    border-bottom-right-radius: 25px;
+
+}
