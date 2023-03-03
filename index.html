@@ -37,7 +37,7 @@
 <body>
 
     <!-- SIDE SOCIAL MEDIA BUTTONS -->
-    <div id="medias-aside" >
+    <div id="medias-aside">
         <div class="content">
             <div id="media-container">
 
@@ -49,8 +49,8 @@
                         aria-hidden="true"></i></a>
             </div>
             <div>
-                <a class="social-media" href="https://twitter.com/viannaV19" target="_blank"><i class="fa fa-twitter-square"
-                        aria-hidden="true"></i></a>
+                <a class="social-media" href="https://twitter.com/viannaV19" target="_blank"><i
+                        class="fa fa-twitter-square" aria-hidden="true"></i></a>
             </div>
             <div>
                 <a class="social-media" href="https://www.instagram.com/vianasz_dev/" target="_blank">
@@ -58,26 +58,13 @@
                 </a>
             </div>
         </div>
-      
+
 
     </div>
 
     <!-- SCROLL TOP BUTTON STYLE -->
     <style>
-        #scrollTopBtn {
-            bottom: 10px;
-            right: 10px;
-            width: 50px;
-            height: 60px;
-            display: none;
-            position: fixed;
-            justify-content: center;
-            flex-direction: column;
-        }
 
-        #scrollTopBtn.show {
-            display: flex;
-        }
     </style>
 
     <a id="scrollTopBtn" class="btn btn-lg btn-primary" href="#home">
@@ -163,97 +150,154 @@
     <!-- ABOUT FINAL -->
 
     <!-- PROJECTS START -->
-    <section id="projects" class="d-flex align-items-center">
+    <section id="projects">
         <div class="container">
-            <h2 class="text-center">Projetos</h2>
-            <p class="text-center lead mb-5">Confira alguns do meus principais projetos!</p>
-            <div class="group">
-                <div class="item">
-                    <img width="100%" height="200" src="assets/imgs/projects/app-mata-mosquito.png" alt="">
-                    <div class="content">
+            <h2 class="title">Projetos</h2>
+            <p class="subtitle lead mb-5">Confira alguns do meus principais projetos!</p>
+            <div class="wrapper">
+                <div id="projects-group" class="group">
+                    <div class="item">
+                        <img class="project-image" src="assets/imgs/projects/news-homepage.png" alt="">
+                        <div class="content">
+                            <h5>News Homepage - <small>Challenge</small></h5>
+                            <p>Site de notícias fictício feito utilizando <b>CSS Display Flex</b>.</p>
 
-                        <h5>App Mata Mosquito - <small>Udemy Course</small></h5>
-                        <p>Jogo feito em Javascript. Mate os mosquitos que irão aparecer na tela.</p>
 
-                        <a href="https://github.com/vianaV19/AppMataMosquito" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
+                            <div class="links">
+                                <a href="https://github.com/vianaV19/news-homepage" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
 
-                    </div>
-
-                </div>
-                <div class="item">
-                    <img width="100%" height="200" src="assets/imgs/projects/twitter-clone.png" alt="">
-                    <div class="content">
-
-                        <h5>Twitter Clone - <small>Udemy Course</small></h5>
-                        <p>Clone do site twitter utilizando PHP, Mysql e Bootstrap.</p>
-
-                        <a href="https://github.com/vianaV19/Twitter-Clone" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
+                                <a href="https://news-homepage-murex.vercel.app/">
+                                    
+                                </a>
+                            </div>
+                        </div>
 
                     </div>
+                    <div class="item">
+                        <img class="project-image" src="assets/imgs/projects/angular project.png" alt="">
+                        <div class="content">
+                            <h5>Loja de Carros - <small>Challenge</small></h5>
+                            <p>Loja de carros usados fictícia feita com Framework <b>Angular.</b>.</p>
 
-                </div>
-                <div class="item">
-                    <img width="100%" height="200" src="assets/imgs/projects/spotify-clone.png" alt="">
-                    <div class="content">
+                            <div class="links">
 
-                        <h5>Spotify Clone - <small>Udemy Course</small></h5>
-                        <p>Clone do site spotify utilizando bootstrap e flex-container.</p>
+                                <a href="https://github.com/vianaV19/teste-listra-digital" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
 
-                        <a href="https://github.com/vianaV19/projeto-spotify" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
 
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img width="100%" height="200" src="assets/imgs/projects/mywallet.png" alt="">
-                    <div class="content">
-
-                        <h5>Mywallet - <small>Projeto próprio</small></h5>
-                        <p>Site que simula uma carteira digital abordando conceitos como CRUD e MVC.</p>
-
-                        <a href="https://github.com/vianaV19/MyWallet" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
+                        </div>
 
                     </div>
+                    <div class="item">
+                        <img src="assets/imgs/projects/app-mata-mosquito.png" alt="">
+                        <div class="content">
 
-                </div>
+                            <h5>App Mata Mosquito - <small>Projeto Pessoal</small></h5>
+                            <p>Jogo de matar mosquitos que aparecem na tela feito com <b>Javascript</b>.</p>
 
-                <div class="item">
-                    <img width="100%" height="200" src="assets/imgs/projects/essays-everyone.png" alt="">
-                    <div class="content">
+                            <div class="links">
+                                <a href="https://github.com/vianaV19/AppMataMosquito" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
 
-                        <h5>Essays.com - <small>Projeto próprio</small></h5>
-                        <p>Divulgue crie e leia redações de temas variados. Usa o bootstrap como principal recurso.</p>
 
-                        <a href="https://github.com/vianaV19/Essays.com" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
+                        </div>
 
                     </div>
+                    <div class="item">
+                        <img src="assets/imgs/projects/twitter-clone.png" alt="">
+                        <div class="content">
 
-                </div>
+                            <h5>Twitter Clone - <small>Pojeto Pessoal</small></h5>
+                            <p>Clone do site da rede social Twitter desenvolido com <b>PHP, MYSQL, Bootstrap e JS</b>.
+                            </p>
+
+                            <div class="links">
+                                <a href="https://github.com/vianaV19/Twitter-Clone" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
 
 
-                <div class="item">
-                    <img width="100%" height="200" src="assets/imgs/projects/finans.png" alt="">
-                    <div class="content">
+                        </div>
 
-                        <h5>Finans - Udemy Course</h5>
-                        <p>Plataforma de gestão financeira.</p>
+                    </div>
+                    <div class="item">
+                        <img src="assets/imgs/projects/spotify-clone.png" alt="">
+                        <div class="content">
 
-                        <a href="https://github.com/vianaV19/Finans" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
+                            <h5>Spotify Clone - <small>Projeto Pessoal</small></h5>
+                            <p>Clone do site de músicas spotify feito com <b>CSS Display-Flex</b>.</p>
+
+                            <div class="links">
+                                <a href="https://github.com/vianaV19/projeto-spotify" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/imgs/projects/mywallet.png" alt="">
+                        <div class="content">
+
+                            <h5>Mywallet - <small>Projeto Pessoal</small></h5>
+                            <p>Carteira Digital fictícia com sistema <b>CRUD</b> stack <b>MYSQL, PHP, Boostrap,
+                                    JQUERY</b> e <b>MVC Architecture Pattern</b>.</p>
+
+                            <div class="links">
+                                <a href="https://github.com/vianaV19/MyWallet" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/imgs/projects/essays-everyone.png" alt="">
+                        <div class="content">
+
+                            <h5>Essays.com - <small>Projeto Pessoal</small></h5>
+                            <p>Site fictício para publicar redações feito com <b>Bootstrap</b>.</p>
+
+                            <div class="links">
+                                <a href="https://github.com/vianaV19/Essays.com" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <img src="assets/imgs/projects/finans.png" alt="">
+                        <div class="content">
+
+                            <h5>Finans - <small>Projeto Pessoal</small></h5>
+                            <p>Site de gestão financeira fictício feito com <b>Bootstrap</b>.</p>
+
+                            <div class="links">
+                                <a href="https://github.com/vianaV19/Finans" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- PROJECTS FINAL -->
@@ -354,7 +398,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email </label>
-                            <input required type="email" class="form-control" id="email" placeholder="Ex.: seuemail@example.com">
+                            <input required type="email" class="form-control" id="email"
+                                placeholder="Ex.: seuemail@example.com">
                         </div>
                         <div class="mb-3">
                             <label for="subject" class="form-label">Conteúdo</label>

@@ -23,3 +23,11 @@ function sendEmail() {
     window.location.href = `mailto:matheus.viana518062@gmail.com?subject=${nome.value}&cc=${email.value}&body=${bodyEmail.value}`
 
 }
+
+//setting projects size
+// const pjg = document.getElementById("projects-group");
+// const itemsQntd = pjg.childElementCount
+// const offset_gap = 0;
+// const w = (300 + offset_gap) * itemsQntd 
+
+// pjg.style.width = w + "px"
