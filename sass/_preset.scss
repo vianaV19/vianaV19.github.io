@@ -61,3 +61,20 @@ ul {
 #scrollTopBtn.show {
     display: flex;
 }
+
+.btn-black  {
+    transition: all 0.3s;
+    background-color: black;
+    box-shadow: 0 0 0.5rem black;
+    font-weight: 500;
+    color: $tpnc;
+    margin-bottom: 20px;
+}
+
+.btn-black:hover {
+    background-color: #fba92c;
+    border: 1px solid #fba92c;
+    box-shadow: 0 0 0.8rem #fba92c;
+    transform: scale(1.1, 1.1);
+    color: white;
+}

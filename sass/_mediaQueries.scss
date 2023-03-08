@@ -42,14 +42,6 @@
         }
     }
 
-    //PROJECTS SECtION
-
-    #projects {
-        .wrapper{
-            height: 3050px;
-        }
-    }
-
 
 }
 
@@ -57,6 +49,7 @@
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
 
+    //TOP NAVIGATION START 
     nav.topnav {
         height: 100px;
 
@@ -75,6 +68,17 @@
 
     nav.topnav .container{
         flex-direction: column;
+    }
+
+    //TOP NAVIGATION END
+
+
+    #projects .wrapper .group div.item {
+        flex: 0 0 300px;
+    }
+
+    #projects .wrapper {
+        width: 130%;
     }
 
     #projects .group div.item,

@@ -28,21 +28,6 @@
         letter-spacing: 1.1px;
         width: 50vw;
     }
-
-    .btn {
-        transition: all 0.3s;
-        background-color: black;
-        box-shadow: 0 0 0.5rem black;
-        font-weight: 500;
-        color: $tpnc;
-    }
-
-    .btn:hover {
-        background-color: #fba92c;
-        border: 1px solid #fba92c;
-        box-shadow: 0 0 0.8rem #fba92c;
-        transform: scale(1.1, 1.1);
-    }
 }
 
 
