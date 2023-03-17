@@ -6,7 +6,6 @@ nav.topnav-anim {
     height: 100px;
     transition: $trans;
     border-bottom: 1px solid #484848;
-
     .navbar-brand,
     .navbar-toggler i,
     .navbar-toggler,
@@ -22,7 +21,6 @@ nav.topnav-anim {
     background-color: $nav-bckgnd;
     height: 80px;
     transition: $trans;
-
 
     .navbar-toggler,
     .navbar-toggler i {
@@ -40,13 +38,22 @@ nav.topnav-anim {
         color: $tpnc;
     }
 
+    .navbar-brand h1, .bracket {
+        font-family: prompt;
+    }
+
+    .bracket{
+        color: #fba92c;
+    }
+
+
     .navbar-nav .nav-link {
         color: $tpnc;
         transition: 0.2s color;
-        font-weight: bold;
+        // font-weight: 400;
         letter-spacing: 2px;
         font-size: 16px;
-        font-family: Arial, visby, roboto;
+        font-family: poppins, Arial, visby, roboto;
     }
 
     .navbar-nav {

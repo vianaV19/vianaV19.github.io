@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "@iconify/ember": "^2.1.0"
   }
 }

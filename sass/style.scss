@@ -1,10 +1,19 @@
 
-//IMPORTING FONTS
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+// IMPORTING FONTS
+// ===================
 
+//ROBOTO
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+// POPPINS
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+//VISBY
 @import url('http://fonts.cdnfonts.com/css/visby');
+
+//PROMPT
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Prompt:wght@200&display=swap');
+
 
 //index style
 @import 'index.scss';
-
-@import 'mediaQueries.scss';
