@@ -59,8 +59,10 @@ function sendEmail() {
     let bodyEmail = document.getElementById('body-email')
 
     window.location.href = `mailto:matheus.viana518062@gmail.com?subject=${nome.value}&cc=${email.value}&body=${bodyEmail.value}`
-
 }
 
+function sobre(){
+    
+}
 
 
